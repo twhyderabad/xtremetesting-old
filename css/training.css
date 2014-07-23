@@ -2,19 +2,19 @@
   background: #eeeeee;
   padding: 1.5em;
   margin: 1em 0;
-  border-top: 4px solid #ee5360;
+  border-top: 4px solid #67422a;
   padding-bottom: 10px;
 
 }
 
 .venue h1 {
-  color: #F51124;
+  color: #67422a;
   font-size: 36px;
   letter-spacing: -1.50px;
   text-align: center;
   padding-bottom: 10px;
   margin-bottom: 10px;
-  border-bottom: 1px solid #F51124;
+  border-bottom: 1px solid #67422a;
 }
 
 .venue .location, .venue .date {

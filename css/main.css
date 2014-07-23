@@ -34,6 +34,14 @@ a:visited { color: #205caa; }
   zoom: 1;
 }
 
+.left {
+  float: left !important;
+}
+
+.right {
+  float: right !important;
+}
+
 
 /* Layout Styles */
 /* ----------------------------------------------------------*/
@@ -131,6 +139,11 @@ a:visited { color: #205caa; }
   top: 3px;
 }
 
+.site-footer .column .link {
+  display: inline-block;
+  margin-right: 15px;
+}
+
 
 /* Page Content styles */
 /* ----------------------------------------------------------*/
@@ -194,7 +207,7 @@ a:visited { color: #205caa; }
 .post-content h6 {
   line-height: 1;
   font-weight: 300;
-  margin: 40px 0 20px;
+  margin: 25px 0 20px;
 }
 
 .post-content h2 {
