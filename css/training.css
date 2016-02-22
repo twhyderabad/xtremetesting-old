@@ -1,10 +1,15 @@
+.site-header .wrap {
+	width: 80%;
+}
+
 .venue {
   background: #eeeeee;
   padding: 1.5em;
-  margin: 1em 0;
+  margin: 0 auto;
   border-top: 4px solid #67422a;
   padding-bottom: 10px;
-
+  width: 80%;
+  box-sizing: border-box;
 }
 
 .venue h1 {
@@ -37,4 +42,96 @@
 
 .venue .register a {
   color: #FFF;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #F1F1F1;
+}
+
+.event-location {
+	margin: 40px auto;
+	padding: 10px 10%;
+	background-color: #F9F8F8;
+	-webkit-box-shadow: 0 2px 8px #DEDEDE;
+	-moz-box-shadow: 0 2px 8px #DEDEDE;
+	box-shadow: 0 2px 8px #DEDEDE;
+}
+
+.event-location .map {
+	width: 50%;
+	margin-right: 20px;
+}
+
+.trainers {
+	width: 80%;
+	margin: 50px auto 20px auto;
+}
+
+.trainers ul {
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+.trainers ul li {
+	width: 300px;
+	list-style: none;
+	display: inline-block;
+	text-align: center;
+}
+
+.trainers ul li a{
+	text-decoration: none;
+}
+
+.trainers .trainer {
+	margin: 20px;
+}
+
+.trainers .trainer img{
+	text-align: center;
+	display: block;
+	width: 200px;
+	margin: 0 auto 15px auto;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	-webkit-box-shadow: 0px 0px 3px #ABABAB;
+	-moz-box-shadow: 0px 0px 3px #ABABAB;
+	box-shadow: 0px 0px 3px #ABABAB;
+	transition: all 0.3s ease-out;
+	box-sizing: border-box;
+}
+
+.trainers .trainer img:hover{
+	padding: 5px;
+	-webkit-box-shadow: 0px 0px 8px #8E8B8B;
+	-moz-box-shadow: 0px 0px 8px #8E8B8B;
+	box-shadow: 0px 0px 8px #8E8B8B;
+}
+
+.container {
+	width: 80%;
+	margin: 20px auto;
+	padding: 40px;
+	box-sizing: border-box;
+}
+
+.box-shadow {
+	-webkit-box-shadow: 0px 0px 3px #ABABAB;
+	-moz-box-shadow: 0px 0px 3px #ABABAB;
+	box-shadow: 0px 0px 3px #ABABAB;
+}
+
+#connect-us {
+	margin-top: 0;
+}
+
+footer {
+	width: 80%;
+	margin: 0 auto;
+}
+
+footer p.about {
+	width: 600px;
 }
