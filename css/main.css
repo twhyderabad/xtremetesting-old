@@ -93,7 +93,7 @@ a:visited { color: #205caa; }
 
 .site-footer {
   border-top: 1px solid #e8e8e8;
-  padding: 30px 0;
+  padding: 30px 10%;
 }
 
 .footer-heading {
@@ -203,9 +203,6 @@ a:visited { color: #205caa; }
 
 .post-content { margin: 0 0 30px; }
 
-.post-content > * { margin: 20px 0; }
-
-
 .post-content h1,
 .post-content h2,
 .post-content h3,
@@ -214,7 +211,6 @@ a:visited { color: #205caa; }
 .post-content h6 {
   line-height: 1;
   font-weight: 300;
-  margin: 25px 0 20px;
 }
 
 .post-content h2 {
@@ -366,17 +362,6 @@ a:visited { color: #205caa; }
 }
 
 @media screen and (max-width: 600px) {
-
-  .wrap { padding: 0 12px; }
-
-  .venue {
-  	width: 98% !important;
-  }
-
-  .trainers ul li {
-  	width: auto !important;
-  }
-
   .container {
   	width: 98% !important;
   	padding: 20px !important;
