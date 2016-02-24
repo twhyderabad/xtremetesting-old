@@ -7,6 +7,8 @@
 }
 
 .box-shadow {
+	-webkit-box-shadow: 0 0px 9px rgba(199, 193, 193, 0.74);
+	-moz-box-shadow: 0 0px 9px rgba(199, 193, 193, 0.74);
 	box-shadow: 0 0px 9px rgba(199, 193, 193, 0.74);
 }
 
@@ -79,6 +81,37 @@ h1 {
 
 /********************* DEAD-LINE ********************/
 
+.tile-container {
+    display: inline-block;
+    width: 235px;
+    text-align: center;
+    margin: 40px;
+    box-shadow: 0 0 3px #777;
+    background: white;
+    border-radius: 5px 5px 0 0;
+}
+.tiles {
+	text-align: center;
+	margin-bottom: 30px;
+}
+.tile{
+	padding: 30px;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    background: white;
+    font-size: 30px;
+    font-weight: 500;
+    border-bottom: 1px solid #E0DEDE;
+}
+
+.tile-description {
+	padding: 10px 0;
+}
+
+.tile sup{
+	font-size: 16px;
+}
+
 .dead-line {
 	
 }
@@ -147,7 +180,7 @@ h1 {
 }
 
 footer p.about {
-	width: 600px;
+	max-width: 600px;
 }
 
 @media screen and (max-width: 900px) {
