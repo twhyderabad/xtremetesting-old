@@ -39,6 +39,7 @@ h1 {
 	padding: 100px;
 	box-sizing: border-box;
 	text-align: center;
+	background: rgba(0, 0, 0, 0.35);
 }
 
 .venue h1 {
@@ -59,13 +60,19 @@ h1 {
 
 .venue .register {
   background-color: #50c3d0;
-  padding: 10px;
   margin: 60px auto 10px;
   width: 200px;
 }
 
 .venue .register a {
   color: #FFF;
+  padding: 10px;
+  display: block;
+	transition: all .3s ease-out;
+}
+
+.venue .register a:hover {
+	background-color: #000;
 }
 
 .venue .location a {
