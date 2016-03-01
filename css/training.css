@@ -20,8 +20,31 @@
 	width: 80%;
 }
 
+.t-bold {
+	font-weight: 600;
+}
+
 h1 {
-	margin-bottom: 20px;
+	margin-bottom: 40px;
+    font-size: 3em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+ul.dashed > li {
+	list-style-type: none;
+}
+
+ul.dashed > li:before {
+	content: "-";
+	padding-right: 5px;
 }
 
 /********************* VENUE ********************/
@@ -31,99 +54,149 @@ h1 {
   background-size: cover;
   margin: 0 auto;
   box-sizing: border-box;
+  background-position-x: -100px;
+}
+
+.tw-logo {
+    width: 230px;
 }
 
 .venue-mask .venue {
 	width: 100%;
 	height: 100%;
-	padding: 100px;
+	padding: 20px 100px 50px 100px;
 	box-sizing: border-box;
-	text-align: center;
 	background: rgba(0, 0, 0, 0.35);
 }
 
 .venue h1 {
 	color: #fff;
-	font-size: 40px;
+	font-size: 4em;
+	margin-top: 20px;
 	margin-bottom: 40px;
-	border-bottom: 1px solid white;
-	display: inline-block;
+	text-align: right;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1.2em;
 }
 
 .venue .date {
 	color: #fff;
-	font-size: 18px;
-	font-style: italic;
+	font-size: 22px;
+	font-weight: 500;
   	letter-spacing: 0.5px;
   	margin-bottom: 20px;
+  	text-align: right;
+  	text-transform: uppercase;
 }
 
 .venue .register {
-  background-color: #50c3d0;
-  margin: 60px auto 10px;
-  width: 200px;
+	margin-top: 70px;
+	text-align: right;
 }
 
 .venue .register a {
-  color: #FFF;
-  padding: 10px;
-  display: block;
-	transition: all .3s ease-out;
+  	color: #FFF;
+    padding: 7px 70px;
+    display: inline-block;
+    border: 1px solid #777;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.37);
+    transition: all .3s ease-out;
 }
 
 .venue .register a:hover {
-	background-color: #000;
+	background-color: #2C2923;
+	border-color: #ffffff;
 }
 
 .venue .location a {
 	color: #E4B15F;
 }
 
-/********************* ABOUT ********************/
+/********************* SEATS & DATES ********************/
 
+.seats-dates {
+	background: #2c2923;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.seats-dates .deadlines {
+	display: flex;
+}
+
+.seats-dates .item {
+	flex-grow: 1;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.seats-dates .field {
+	font-size: 26px;
+	text-align: right;
+	text-transform: uppercase;
+	vertical-align: top;
+    display: inline-block;
+    line-height: 1.2em;
+    margin-top: 14px;
+}
+
+.seats-dates .item:last-child .field {
+	margin-top: 0;
+}
+
+.seats-dates .field:first-letter {
+	font-size: 34px;
+    font-weight: 500;
+}
+
+.seats-dates .field-info {
+	font-size: 4em;
+    border-left: 2px solid white;
+    padding-left: 20px;
+    margin-left: 20px;
+    font-weight: 700;
+}
+
+.seats-dates .field-info .field-info-month {
+	font-weight: normal;
+}
+
+.seats-dates .seats-dates--description {
+	text-align: center;
+	margin: 30px 20% 0 20%;
+}
+
+/********************* TOPICS ********************/
+
+.topics {
+	text-align: center;
+}
+
+.topics ul li{
+	padding: 5px;
+}
 /********************* SELECTION-CRITERIA ********************/
 
 .selection-criteria {
 }
 
-/********************* DEAD-LINE ********************/
-
-.tile-container {
-    display: inline-block;
-    width: 235px;
-    text-align: center;
-    margin: 40px;
-    box-shadow: 0 0 3px #777;
-    background: white;
-    border-radius: 5px 5px 0 0;
-}
-.tiles {
-	text-align: center;
-	margin-bottom: 30px;
-}
-.tile{
-	padding: 30px;
-    border-radius: 5px 5px 0 0;
-    text-align: center;
-    background: white;
-    font-size: 30px;
-    font-weight: 500;
-    border-bottom: 1px solid #E0DEDE;
-}
-
-.tile-description {
-	padding: 10px 0;
-}
-
-.tile sup{
-	font-size: 16px;
-}
-
-.dead-line {
-	
-}
-
 /********************* TRAINERS ********************/
+
+.trainers-container {
+	text-align: center;
+}
+
+.trainers-container .trainers {
+	width: 49%;
+	display: inline-block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
 
 .trainers ul {
 	padding: 0;
@@ -132,14 +205,9 @@ h1 {
 }
 
 .trainers ul li {
-	width: 300px;
 	list-style: none;
 	display: inline-block;
 	text-align: center;
-}
-
-.trainers ul li a{
-	text-decoration: none;
 }
 
 .trainers .trainer {
@@ -149,7 +217,7 @@ h1 {
 .trainers .trainer img{
 	text-align: center;
 	display: block;
-	width: 200px;
+	width: 130px;
 	margin: 0 auto 15px auto;
 	-webkit-border-radius: 100%;
 	-moz-border-radius: 100%;
@@ -170,9 +238,53 @@ h1 {
 
 /********************* EVENT-LOCATION ********************/
 
+.event-location {
+	margin-top: 40px;
+}
+
+.event-location a {
+	color: black;
+}
+
+.event-location a:hover .address{
+	background: white;
+	bottom: 20px;
+	-wekit-box-shadow: -3px 0 9px rgba(132, 130, 130, 0.83);
+	-moz-box-shadow: -3px 0 9px rgba(132, 130, 130, 0.83);
+	box-shadow: -3px 0 9px rgba(132, 130, 130, 0.83);
+}
+
 .event-location .map {
-	width: 50%;
-	margin-right: 20px;
+	background: url(../assets/img/map-h.jpg);
+	height: 600px;
+	position: relative;
+}
+
+.event-location .map .address {
+	position: absolute;
+    background: rgba(255, 255, 255, 0.83);
+    padding: 20px 30px;
+    font-size: 14px;
+    right: 0;
+    bottom: 0;
+    text-align: right;
+    -webkit-box-shadow: -3px -2px 9px rgba(177, 173, 173, 0.83);
+    -moz-box-shadow: -3px -2px 9px rgba(177, 173, 173, 0.83);
+    box-shadow: -3px -2px 9px rgba(177, 173, 173, 0.83);
+    -webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+}
+
+.event-location .map .address h4 {
+	margin-bottom: 7px;
+	font-weight: 500;
+}
+
+.event-location a {
+	display: block;
+	width: 100%;
+	height: 100%;
 }
 
 .container {
@@ -182,8 +294,19 @@ h1 {
 	box-sizing: border-box;
 }
 
-#connect-us {
-	margin-top: 0;
+.queries {
+	text-align: center;
+}
+
+.queries .contact-us {
+	font-size: 24px;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+.queries .contact-us:hover {
+	text-decoration: none;
+	color: #2a7ae2;
 }
 
 footer p.about {
@@ -193,15 +316,106 @@ footer p.about {
 @media screen and (max-width: 900px) {
 	.venue-mask {
 		background-image: url(../assets/img/banner-tablet.jpg);
+		background-position-x: 0;
+	}
+
+	.trainers-container .trainers {
+		width: 100%;
 	}
 }
 
 @media screen and (max-width: 600px) {
+	.max-wrap {
+		padding: 40px 15px;
+	}
+
 	.venue-mask {
 		background-image: url(../assets/img/banner-mobile.jpg);
 	}
 
 	.venue-mask .venue {
 		padding: 40px;
+	}
+
+	.venue h1 {
+		font-size: 2em;
+	}
+
+	.venue .date {
+		font-size: 13px;
+	}
+
+	.venue .register {
+		text-align: center;
+	}
+
+	.about-description {
+		text-align: justify;
+	}
+
+	.seats-dates {
+		padding: 0 0 10px 0;
+	}
+
+	.seats-dates .item {
+		width: 49%;
+		padding: 10px;
+		display: inline-block;
+	}
+
+	.seats-dates .item--last {
+		width: 100%;
+		margin-top: 20px;
+	}
+
+	.seats-dates .deadlines {
+		display: block;
+	}
+
+	.seats-dates .field {
+	    display: block;
+	    text-align: center;
+	    padding-bottom: 15px;
+	    border-bottom: 2px solid #ffffff;
+	}
+
+	.seats-dates .field-info {
+	    border-left: 0;
+	    margin-left: 0;
+	    padding-left: 0;
+	}
+
+
+	.seats-dates .item--last .field{
+		border-bottom: 0;
+	}
+	
+	.seats-dates .item--last .field-info{
+		border-top: 2px solid #ffffff;
+		padding-top: 10px;
+	}
+
+	.seats-dates .seats-dates--description {
+	    margin: 15px;
+	    text-align: justify;
+	}
+
+	.event-location .map {
+		background: url(../assets/img/map.jpg);
+		background-size: cover;
+		background-position: -100px;
+	}
+
+	.event-location .map .address {
+		left: 0;
+		text-align: center;
+	}
+
+	.why-free p {
+		text-align: justify;
+	}
+
+	.site-footer {
+		padding: 30px 15px;
 	}
 }
