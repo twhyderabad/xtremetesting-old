@@ -333,8 +333,31 @@ ul.dashed > li:before {
 	color: #2a7ae2;
 }
 
+.queries .send-your-code {
+	font-size: 20px;
+	font-weight: 500;
+}
+
 footer p.about {
 	max-width: 600px;
+}
+
+.problem-statement h2{
+	text-align: left;
+	color: #2a7ae2;
+	cursor: pointer;
+}
+
+.problem-statement #problemStatement1Desc,
+.problem-statement #problemStatement2Desc {
+	max-height: 300px;
+	overflow: hidden;
+	transition: max-height .4s ease-out;
+}
+
+.problem-statement #problemStatement1Desc.hide,
+.problem-statement #problemStatement2Desc.hide {
+	max-height: 0;
 }
 
 @media screen and (max-width: 900px) {

@@ -1,8 +1,101 @@
+<!DOCTYPE html>
 <html>
 <head>
-	<title>Problem Statemets</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="shortcut icon" href="http://www.thoughtworks.com/imgs/favicons/favicon.ico" type="image/vnd.microsoft.icon" />
+	<link type="image/x-icon" href="http://www.thoughtworks.com/imgs/favicons/favicon.ico" rel="shortcut icon">
+	<title>Problem Statements</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="description" content="ThoughtWorks Agile Developer Bootcamp, April 2015">
+	<link rel="canonical" href="http://twhyderabad.github.io/agiledev/">
+	<!-- Custom CSS -->
+
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/training.css"/>
 </head>
 <body>
+	<div class="page-content">
+		<div class="wrap">
+			<div class="post">
+				<article class="post-content">
+					<div class="venue-mask">
+						<div class="venue">
+							<img class="tw-logo" src="assets/img/tw-logo.png"/>
+							<span class="tw-hyd">Hyderabad</span>
+							<h1 id="venue">Extreme Programming<br />for Developers</h1>
+						</div>
+					</div>
 
+					<div class = "about max-wrap">
+						<h1>What We Look For?</h1>
+						<p class = "about-description">
+							<a href="http://www.thoughtworks.com" target="_blank">ThoughtWorks Hyderabad </a>is glad to announce a <a href = "#why-is-thoughtworks-doing-it-for-free">free</a> for all Extreme Programming for developers camp. It is a 4-day course with coding and hands on exercises.
+							Build the community of developers who practice extreme programming(XP) methodologies in software development life cycle. This course will help the developers to gain hands on experience of XP methodologies which can be applied to build the better softwares.
+						</p>
+					</div>
+
+					<div class = "problem-statement max-wrap colored-box box-shadow">
+						<h2 id="problemStatement1">Problem Statement 1: </h2>
+						<div id="problemStatement1Desc"  class="hide">for all Extreme Programming for developers camp. It is a 4-day course with coding and hands on exercises.
+							Build the community of developers who practice extreme programming(XP) methodologies in software development life cycle. This course will help the developers to gain hands on experience of XP methodologies which can be applied to build the better softwares.</div>
+						<h2 id="problemStatement2">Problem Statement 2: </h2>
+						<div id="problemStatement2Desc" class="hide">for all Extreme Programming for developers camp. It is a 4-day course with coding and hands on exercises.
+							Build the community of developers who practice extreme programming(XP) methodologies in software development life cycle. This course will help the developers to gain hands on experience of XP methodologies which can be applied to build the better softwares.</div>
+					</div>
+
+					<div class="queries max-wrap">
+						<h1 id="connect-us">Queries?</h1>
+						<span class="send-your-code">Send your code to: </span>
+						<a class = "contact-us" href="mailto:xp-hyderabad@thoughtworks.com?Subject=Agile%20Developer%20Bootcamp%2015%20May%202015%20query" target="_top" class="break-word">xp-hyderabad@thoughtworks.com</a>
+					</div>
+				</article>
+			</div>
+		</div>
+	</div>
+	<footer class="site-footer">
+
+		<div class="wrap clear-fix">
+
+			<div class="column left">
+				<ul>
+					<li><h2>About ThoughtWorks</h2></li>
+					<li><p class="about">We are a software company and a community of passionate, purpose-led individuals. We think disruptively to deliver technology to address our clients' toughest challenges, all while seeking to revolutionize the IT industry and create positive social change.</p></li>
+				</ul>
+			</div>
+
+			<div class="column right">
+				<ul>
+					<li><h2>Connect with us</h2></li>
+					<li class="link">
+						<a href="https://www.facebook.com/ThoughtWorksHyderabad" target="_blank">
+							<img src="./assets/img/facebook.png" width="50px">
+						</a>
+					</li>
+					<li class="link">
+						<a href="https://twitter.com/thoughtworks" target="_blank">
+							<img src="./assets/img/twitter.png" width="50px">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	</footer>
+
+	<script type="text/javascript">
+		var problemStatement1 = document.getElementById("problemStatement1");
+		var problemStatement2 = document.getElementById("problemStatement2");
+
+		problemStatement1.addEventListener("click", function() {
+			document.getElementById("problemStatement1Desc").className = "";
+			document.getElementById("problemStatement2Desc").className = "hide";
+		});
+
+		problemStatement2.addEventListener("click", function() {
+			document.getElementById("problemStatement2Desc").className = "";
+			document.getElementById("problemStatement1Desc").className = "hide";
+		});
+	</script>
 </body>
 </html>
