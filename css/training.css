@@ -350,7 +350,7 @@ footer p.about {
 
 .problem-statement #problemStatement1Desc,
 .problem-statement #problemStatement2Desc {
-	max-height: 300px;
+	max-height: 620px;
 	overflow: hidden;
 	transition: max-height .4s ease-out;
 }
@@ -436,7 +436,7 @@ footer p.about {
 	.seats-dates .item--last .field{
 		border-bottom: 0;
 	}
-	
+
 	.seats-dates .item--last .field-info{
 		border-top: 2px solid #ffffff;
 		padding-top: 10px;
