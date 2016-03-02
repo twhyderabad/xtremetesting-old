@@ -350,9 +350,27 @@ footer p.about {
 
 .problem-statement #problemStatement1Desc,
 .problem-statement #problemStatement2Desc {
-	max-height: 620px;
+	max-height: 3000px;
 	overflow: hidden;
 	transition: max-height .4s ease-out;
+	word-break: break-word;
+}
+
+.problem-statement #problemStatement1Desc .pdf-link,
+.problem-statement #problemStatement2Desc .pdf-link {
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.problem-statement #problemStatement1Desc .pdf-link a,
+.problem-statement #problemStatement2Desc .pdf-link a{
+	font-size: 1.5em;
+	color: #E2731F;
+}
+
+.problem-statement #problemStatement1Desc .pdf-link a img,
+.problem-statement #problemStatement2Desc .pdf-link a img{
+	vertical-align: middle;
 }
 
 .problem-statement #problemStatement1Desc.hide,
