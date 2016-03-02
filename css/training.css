@@ -54,7 +54,6 @@ ul.dashed > li:before {
   background-size: cover;
   margin: 0 auto;
   box-sizing: border-box;
-  background-position-x: -100px;
 }
 
 .tw-logo {
@@ -99,15 +98,16 @@ ul.dashed > li:before {
   	color: #FFF;
     padding: 7px 70px;
     display: inline-block;
-    border: 1px solid #777;
+    border: 1px solid #ffffff;
     border-radius: 30px;
     background: rgba(0, 0, 0, 0.37);
+    text-transform: uppercase;
+    font-weight: 500;
     transition: all .3s ease-out;
 }
 
 .venue .register a:hover {
 	background-color: #2C2923;
-	border-color: #ffffff;
 }
 
 .venue .location a {
@@ -403,7 +403,6 @@ footer p.about {
 	.event-location .map {
 		background: url(../assets/img/map.jpg);
 		background-size: cover;
-		background-position: -100px;
 	}
 
 	.event-location .map .address {
