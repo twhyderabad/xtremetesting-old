@@ -48,11 +48,6 @@ ul.dashed > li {
 	list-style-type: none;
 }
 
-ul.dashed > li:before {
-	content: "-";
-	padding-right: 5px;
-}
-
 .tw-hyd {
 	color: white;
     display: block;
