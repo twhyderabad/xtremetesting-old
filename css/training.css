@@ -94,7 +94,8 @@ ul.dashed > li {
     line-height: 1.2em;
 }
 
-.venue .date {
+.venue .date,
+.venue .time {
 	color: #fff;
 	font-size: 22px;
 	font-weight: 500;
@@ -105,7 +106,8 @@ ul.dashed > li {
 
 .venue .date sup {
 	font-size: 16px;
-	text-transform: lowercase;
+	text-transform: uppercase;
+    vertical-align: text-top;
 }
 
 .venue .register {
@@ -343,6 +345,14 @@ footer p.about {
 	text-align: left;
 	color: #2a7ae2;
 	cursor: pointer;
+}
+
+.problem-statement pre {
+    white-space: pre-wrap;       /* CSS 3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
 .problem-statement #problemStatement1Desc,
