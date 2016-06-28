@@ -87,7 +87,7 @@ ul.dashed > li {
 .venue h1 {
 	color: #fff;
 	font-size: 4em;
-	margin-bottom: 40px;
+	margin-bottom: 0;
 	text-align: right;
     text-transform: uppercase;
     font-weight: 500;
@@ -102,6 +102,12 @@ ul.dashed > li {
   	letter-spacing: 0.5px;
   	text-align: right;
   	text-transform: uppercase;
+}
+
+.venue .condition {
+    text-align: right;
+    color: white;
+    margin-bottom: 40px;
 }
 
 .venue .date sup {
