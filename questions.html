@@ -32,15 +32,11 @@
 					<div class = "about max-wrap">
 						<h1>What We Look For?</h1>
 						<p class = "about-description">
-							The given problems should be solved <b>using any Prgramming Language/Automation Tool</b>. Criteria on which the solution will be assessed are:
+							Criteria on which the solution will be assessed are:
 <ui>
-<li>Good Object Oriented design.</li>
-<li>Readable code.</li>
-<li>Tests are not mandatory.</li>
-
+<li>In Question 1, we look for showstopper / high priority defects found with manual testing. Any non functional testing defects would be an added advantage</li>
+<li>In Question 2, any programming language and automation tool could be used. We mostly look for the approach used to solve the problem with an eye on the basic syntax used. Working and readable code would be an added advantage</li>
 </ui>
-
-The solutions which are close to the production code would get more weightage in the selection criteria.
 						</p>
 					</div>
 
@@ -48,168 +44,29 @@ The solutions which are close to the production code would get more weightage in
 						<h1>Solve one of the two</h1>
 						<h2 id="problemStatement1">Problem Statement 1: </h2>
 						<div id="problemStatement1Desc"  class="hide">
-							<div class = "pdf-link">
-								<a href="./assets/problems/xtreme-programming-problem-statement-1.pdf" target="_blank">Download as <img src="./assets/img/pdf-document.png"></a>
-							</div>
+							
 <pre>
-	Discounts on apparel
-This shopping season you are having fun at the Mall. The Mall owner, himself, is quite stressed out having to manage the influx of customers.
-He is struggling to calculate the discounts that he has on his clothing line. You decide to help him out by building a system that calculates the discounts on all the applicable items a customer has bought.
+Identify top 5 Bugs/Defects in the website <Link to the buggy website>. 
+Login to the website with the following credentials <Credentials to login>.
 
-There are several categories of products. In fact, categories have subcategories which themselves can have subcategories. Below is a diagram.
-Casuals is a subcategory of Trousers, which by itself is a subcategory of Men's wear. Some categories have discounts.
-
-            Men's wear                 Women's wear (50% off)
-            |- Shirts                  |- Dresses
-            |- Trousers                |- Footwear
-            |- Casuals (30% off)
-            |- Jeans   (20% off)
-
-Each product you have belongs to a brand which by themselves are running discounts. Below is a table that lists them:
-Brands Discounts:
-Wrangler         10%
-Arrow            20%
-Vero Moda        60%
-UCB              None
-Adidas           5%
-Provogue         20%
-
-This way, a product can have three types of discounts applicable:
-1. Discount on the brand
-2. Discount on the category
-3. Discount on the ancestor category (e.g. Footwear doesn't have a discount, but it's parent category Women's wear has 50% off). It is worth noting, that it is an ancestor: not just a direct parent, anyone in the lineage.
-
-The discount that is applied is the greatest of the above three. For example, if the customer buys a Jeans of Wrangler Brand, the discounts are:
-1. Discount on brand: 10%
-2. Discount on category (Jeans): 20%
-3. Discount on parents (Trousers, Men's wear): None
-So, the discount that is applied 20%.
-
-Inventory (the list of items that shop has):
-===========================================================
-Id | Brand      | Category | Price | Discounted Price     |
-===========================================================
-1  | Arrow      | Shirts   | 800   | 640                  |
-2  | Vero Moda  | Dresses  | 1400  | 560                  |
-3  | Provogue   | Footwear | 1800  | 900                  |
-4  | Wrangler   | Jeans    | 2200  | 1760                 |
-5  | UCB        | Shirts   | 1500  | 1500                 |
-===========================================================
-
-You will be given the above table (without discounted price) in CSV form as standard input. This is the shop inventory.
-You'll also get the customer options as comma separated Id's after a newline. In the example below, 1,2,3,4 are the customer choices.
-
-Sample Input:
-
-5
-1, Arrow,Shirts,800
-2, Vero Moda,Dresses,1400
-3, Provogue,Footwear,1800
-4, Wrangler,Jeans,2200
-5, UCB,Shirts,1500
-
-2
-1,2,3,4
-1,5
-
-Expected output:
-3860
-2140
 
 </pre></div>
 
 						<h2 id="problemStatement2">Problem Statement 2: </h2>
 						<div id="problemStatement2Desc" class="hide">
-							<div class = "pdf-link">
-								<a href="./assets/problems/xtreme-programming-problem-statement-2.pdf" target="_blank">Download as <img src="./assets/img/pdf-document.png"></a>
-							</div>
+							
 <pre>
-Transportation in a metro city is a major issue for the Government of Telangana, and Hyderabad is no exception to this rule.
-Keeping this in view, the Hyderabad Metro Rail is being developed as one of the largest modern transport systems in the world based upon the PPP model.
-There are a lot of systems in HMR, one of them is Ticketing System. A passenger needs a ticket to travel by the metro rail.
-Build a system which can print the ticket, given both source and destination.
+Automate the flow using any automation tool and programming language:
+<Flow for automation>
 
-Following are the pricing rules to consider:
-
-Upto the 3 stations journey, fare is  ₹ 10.00/- ( for all Lines )
-After the 3 stations, for every extra station,
-	₹ 2.50/- for Line I
-	₹ 2.00/- for Line II
-	₹ 3.00/- for Line III
-There is no extra cost associated with changing lines
-
-Expected Input format:
-Enter Source Station Code:
-A4
-Enter Destination Station Code:
-B12
-
-Expected Output format:
-*************************************************************
-			Hyderabad Metro Rail
-Source:		Kukatpally		Distance ( stations): 18
-Destination:	Charminar		Cost:	₹ 46.50/-
-*************************************************************
-
-Following are the details of the Lines / Stations:
-
-3 Lines - 66 Stations - 3 Interchange Stations:
-
-Line I	- Miyapur to L B Nagar - 27 Stations, 29 KM
-Line II	- JBS to Falaknuma - 16 Stations, 15 KM
-Line III - Nagole to Shilparamam - 23 Stations, 28 KM
-
-Stations – Line I:
-
-Code 	Station				Code	Station			Code	Station
-A1 	Miyapur				A2	JNTU College		A3 	KPHB Colony
-A4	Kukatpally			A5	Balanagar		A6	Moosapet
-A7	Bharat Nagar			A8	Erragadda		A9	ESI Hospital
-A10	S R Nagar			X1	Ameerpet		A12	Punjagutta
-A13	Irrum Manzil			A14	Khairatabad		A15	Lakdikapul
-A16	Assembly			A17	Nampally		A18	Gandhi Bhavan
-A19	Osmania Medical College		X2	MG Bus station		A21	Malakpet
-A22	New Market			A23	Musarambagh		A24	Dilsukhnagar
-A25	Chaitanyapuri			A26	Victoria Memorial	A27	L B Nagar
-
-
-Stations – Line II:
-
-Code 	Station			Code	Station			Code	Station
-B1	JBS			X3	Parade Grounds		B3	Secunderabad
-B4	Gandhi Hospital		B5	Musheerabad		B6	RTC Cross Roads
-B7	Chikkadpally		B8	Narayanguda		B9	Sultan Bazar
-X2	M G Bus Station		B11	Salarjung Museum	B12	Charminar
-B13	Shalibanda		B14	Shamsher Gunj		B15	Jungametta
-B16	Falaknuma
-
-Stations - Line III:
-
-Code 	Station			Code	Station				Code	Station
-C1	Nagole			C2	Uppal				C3	Survey of India
-C4	NGRI			C5	Habsiguda			C6	Tarnaka
-C7	Mettuguda		C8	Secunderabad			X3	Parade Grounds
-C10	Paradise		C11	Rasool Pura			C12	Prakash Nagar
-C13	Begumpet		X1	Ameerpet			C15	Madhura Nagar
-C16	Yusuf Guda		C17	Road No 5 Jubilee Hills		C18	Jubilee Hills Check Post
-C19	Pedamma Temple 		C20	Madhapur			C21	Durgam Chervu
-C22	HITEC City		C23	Shilparamam
-
-Interchange Stations:
-
-Code		Station				Connecting Lines
-X1		Ameerpet Station		Line I & III
-X2		M G B S Station			Line I & II
-X3		Parade Grounds Station		Line II & III
 </pre>
 
-<img src = "./assets/problems/problem-statement-xpbootcamp-2.jpg" width=100%>
 						</div>
 					</div>
 
 					<div class="queries max-wrap">
 						<h1 id="connect-us">Solved the Problems?</h1>
-						<span class="send-your-code">Then send your code with subject "xp-solution" to: </span>
+						<span class="send-your-code">Then send your code with subject "xt-solution" to: </span>
 						<a class = "contact-us" href="mailto:xp-hyderabad@thoughtworks.com?Subject=xp-solution" target="_top" class="break-word">xt-hyderabad@thoughtworks.com</a>
 					</div>
 				</article>
